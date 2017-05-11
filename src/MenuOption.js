@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, StyleSheet, Text } from 'react-native';
 import { debug } from './logger';
 import { makeTouchable } from './helpers';
@@ -40,11 +41,11 @@ export default class MenuOption extends Component {
 }
 
 MenuOption.propTypes = {
-  disabled: React.PropTypes.bool,
-  onSelect: React.PropTypes.func,
-  text: React.PropTypes.string,
-  value: React.PropTypes.any,
-  customStyles: React.PropTypes.object,
+  disabled: PropTypes.bool,
+  onSelect: PropTypes.func,
+  text: PropTypes.string,
+  value: PropTypes.any,
+  customStyles: PropTypes.object,
 };
 
 MenuOption.defaultProps = {
@@ -53,7 +54,7 @@ MenuOption.defaultProps = {
 };
 
 MenuOption.contextTypes = {
-  menuActions: React.PropTypes.object,
+  menuActions: PropTypes.object,
 };
 
 const defaultStyles = StyleSheet.create({
