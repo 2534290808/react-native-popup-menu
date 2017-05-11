@@ -40,7 +40,7 @@
     "setupTestFrameworkScriptFile": "<rootDir>/setup-jasmine-env.js"
   },
   "peerDependencies": {
-    "react": "^15.5.0 || ^16.0.0-alpha"
+    "react": "^15.3.0 || ^16.0.0-alpha"
   },
   "dependencies": {
     "prop-types": "^15.5.7"
